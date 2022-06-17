@@ -1,6 +1,7 @@
 let names = new Array();
 let prices = new Array();
 let count = 1;
+let grandTotal = (document.getElementById("sum").textContent = 0);
 
 function insertItem() {
     let fullName = document.getElementById("item-name-input").value;
@@ -24,7 +25,12 @@ function insertItem() {
         let td3 = document.createElement("td");
 
         td1.innerText = count;
+
         td2.innerText = fullName;
+        td2.setAttribute("data-ns-test", "item-name");
+        td2.style.textAlign = "center";
+
+        td3.setAttribute("data-ns-test", "item-price");
         td3.innerText = price.toFixed(2);
         td3.style.textAlign = "right";
 
