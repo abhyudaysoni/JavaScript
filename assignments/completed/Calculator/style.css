@@ -1,0 +1,49 @@
+body {
+    margin-top: 100px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+button {
+    cursor: pointer;
+    width: 100%;
+    min-height: 10vh;
+}
+button:hover {
+    filter: invert(20%);
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#numpad {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+#operations {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+#input {
+    border: 3px solid black;
+    border-radius: 10px;
+    min-width: 100%;
+    min-height: 5vh;
+    text-indent: 10px;
+    text-align: right;
+}
+#clr {
+    align-self: center;
+    font-size: 2rem;
+    border-radius: 100px;
+    width: 100%;
+    min-height: 10vh;
+}
+main button {
+    font-size: 2rem;
+    border-radius: 100px;
+}
