@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    width: 100px;
+    padding: 1em;
+    outline: none;
+    border: 1px solid #e6d967;
+    border-radius: 10px;
+    background-color: #f0e9af;
+    margin: 1em;
+}
+
+button:hover {
+    cursor: pointer;
+}

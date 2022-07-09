@@ -3,23 +3,9 @@ const addBtn = document.querySelector(".todo-button");
 addBtn.addEventListener("click", add);
 const notes = document.querySelector(".todo-list");
 
-/*
-//selecting items to make list items
-const listItem = document.createElement("li");
-const note = document.createElement("h4");
-const completedBtn = document.createElement("button");
-const deleteBtn = document.createElement("button");
-
-//selecting the textbox
-const input = document.querySelector(".todo-input");
-*/
-
 function add(e) {
     e.preventDefault();
 
-    //selecting items to make list items
-
-    //selecting the textbox
     const input = document.querySelector(".todo-input");
 
     const listItem = document.createElement("li");
