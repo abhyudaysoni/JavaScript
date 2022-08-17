@@ -1,0 +1,41 @@
+1. What is the difference between var, let, and const?
+2. What is hoisting?
+3. What are closures?
+4. Output based question
+for (var i = 0; i < 3; i++) {
+  setTimeout(function() { alert(i); }, 1000 + i);
+}
+5 What is function curring?
+6. Implement add(3)(4)
+7. Implement add(3)(4)(7)()
+8. What are higher-order functions?
+9. What is event delegation?
+10. How does js work internally?
+11. Diff between null and undefined
+12. One output-based question
+
+
+
+
+function add(a){
+	if(a===null){
+  		return function(b){
+  			return add(a+b);
+  	};
+  }
+  else{
+  	return add();
+  }
+
+}
+
+console.log(add(3)(4)(5)())
+
+
+learn(imp for react)
+polyfills
+Array.map()
+Array.filter()
+
+
+currying and infinite currying

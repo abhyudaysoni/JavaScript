@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="text-here" id="text-container">
+        Example text
+    </div>
+    <input id="colorbox" type="text">
+    <button onclick="changeColor()" id="change-color-btn">Change Color</button>
+    <input id="font-size" type="range" min="10" max="100" value="55" onchange="setFontSize()"></input>
+    <button id="bold-btn" onclick="setBoldness()">to bold</button>
+    <button id="italics-btn" onclick="setItalics()">to italics</button>
+    <button id="underline-btn" onclick="setUnderline()">underline</button>
+    <select id="select-font-family" onchange="selectFontFamily()">
+        <option>Arial</option>
+        <option>Calibri</option>
+        <option>Times New Roman</option>
+        <option>Impact</option>
+        <option>Tahoma</option>
+    </select>
+    <button onclick="copyProperties()" class="stylebt">Copy Properties</button>
+    <script src="./script.js"></script>
+</body>
+
+</html>
